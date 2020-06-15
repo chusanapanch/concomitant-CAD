@@ -14,8 +14,8 @@ function update() {
     rheumatic = document.getElementById("rheumatic").checked;
 
     //2. Score evaluation
-
-    score = age;
+    score = 0;
+    score = score + age;
 
 
 
