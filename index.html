@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Simplified score for concomitant CAD prediction</title>
+    </head>
+
+    <body>
+        <h3>Simplified score for concomitant CAD prediction</h3>
+
+
+        <p>Age (years)<br><input type="text" id="age" onchange="update()"></p>
+        <p>Chest pain characteristics <br> <select id="chestPain" onchange="update()">
+            <option value="0">None</option>
+            <option value="2">Typical anginal pain</option>
+            <option value="1">Atypical anginal pain</option>
+        </select>
+        </p>
+        <p><input type= "checkbox" id="familyCAD" onchange="update()"> Family of premature CAD </p>
+        <p><input type= "checkbox" id="diabetes" onchange="update()"> Diabetes</p>
+        <p><input type= "checkbox" id="dyslipid" onchange="update()"> Dyslipidemia</p>
+        <p><input type= "checkbox" id="aorticValve" onchange="update()"> Aortic valve lesion</p>
+        <p><input type= "checkbox" id="rheumatic" onchange="update()"> Rheumatic valve</p>
+        <p id="score"> </p>
+        <p id="risk"> </p>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
