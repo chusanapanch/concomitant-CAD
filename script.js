@@ -1,11 +1,12 @@
 //////////////////////////////////////CAD risk Score
 
-var score, age, chestPain, familyCAD, diabetes, dyslipid, aorticValve, rheumatic, risk;
+var age, chestPain, familyCAD, diabetes, dyslipid, aorticValve, rheumatic, risk;
+var score = 0;
 
 function update() {
     
     //1. Receive data from html
-    age = document.getElementById("age").value;
+    age = + document.getElementById("age").value;
     chestPain = document.getElementById("chestPain").value;
     familyCAD = document.getElementById("familyCAD").checked;
     diabetes = document.getElementById("diabetes").checked;
